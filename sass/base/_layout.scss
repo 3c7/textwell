@@ -1,0 +1,121 @@
+/* Transistion parameters */
+$transition: 1s ease all;
+
+/* Body */
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: $font;
+    color: $color-font;
+}
+
+/* intro class */
+.intro {
+    width: 100%;
+    margin-bottom: 50px;
+    color: $color-font-light;
+    
+    &-container {
+        width: 450px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    &-heading-container {
+        height: 100%;
+        float: left;
+        margin-right: 8px;
+        border-right: 5px solid $color-font-light;
+        transition: $transition;
+        &:hover {
+            border-right: 5px solid $color-link-hover;
+        }
+    }
+    
+    &-heading {
+        font-size: 12em;
+    }
+    
+    &-links {
+        list-style: none;
+        font-size: 2em;
+        margin: auto;
+        padding-top: 8px;
+    }
+}
+
+/* content class */
+.content {
+    width: 100%;
+    float: none;
+    clear: both;
+    
+    &-post {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+/* post class */
+.post {
+    &-heading {
+        font-size: 1.5em;
+        font-weight: bold;
+        
+        a, a:active, a:visited {
+            color: $color-font;
+            transition: $transition;
+        }
+        a:hover {
+            color: $color-link-hover;
+        }
+    }
+    
+    &-date {
+        font-size: 0.8em;
+        color: $color-font-date;
+        margin-top: -25px;
+        font-style: italic;    
+    }
+    
+}
+
+/* footer class */
+footer {
+    background: $color-background;
+    position: fixed;
+    top: 100%;
+    width: 100%;
+    margin-top: -35px;
+    height: 35px;
+    text-align: center;
+    transition: $transition;
+    border-top: 2px solid $color-font-light;
+    
+    &:hover {
+        border-top: 2px solid $color-link-hover;
+    }
+    
+    span {
+        line-height: 35px;
+    }
+}
+
+/* link behaviour */
+a {
+    color: $color-link;
+    text-decoration: none;
+    transition: $transition;
+    
+    &:visited, &:active {
+        color: $color-link;
+        text-decoration: none;
+        transition: $transition;
+    }
+    
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+    
